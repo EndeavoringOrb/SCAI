@@ -38,9 +38,9 @@ def check_pressed(array):
         return_array[6] = 1
     if keyboard.is_pressed("r"):
         return_array[7] = 1
-    if left_down:
+    if left_down or mouse.is_pressed("left"):
         return_array[8] = 1
-    if right_down:
+    if right_down or mouse.is_pressed("right"):
         return_array[9] = 1
     return return_array
 
