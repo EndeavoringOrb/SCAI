@@ -74,6 +74,12 @@ while True:
 
 # Group the keyboard and mouse events by time
 print("Grouping inputs...")
+total_size = len(screenshots)
+
+start_grouping = time.time()
+formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(start_grouping))
+print(f"Start time: {formatted_time}")
+
 output_groups = []
 linear_groups = []
 outputs = [0]*18
@@ -126,11 +132,21 @@ for k in range(screenshot_count):
                     mouse_pos = (mouse_events[i].x,mouse_events[i].y)
     output_groups.append(outputs)
     outputs = [0]*18
-print("Saving")
+
+#print how long grouping took
+end_grouping = time.time()
+formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(end_grouping))
+print(f"End time: {formatted_time}")
+print(f"Avg time per input/output: {(end_grouping-start_grouping)/total_size}")
+print("-------------------------------------------")
+print("")
+
+print("Saving...")
 
 def save_array(array, filename, num_files):
     start = time.time()
     formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(start))
+    print(filename)
     print(f"Start time: {formatted_time}")
     for i in range(len(array)):
         np.save(f'{filename}_{i+num_files}', array[i])
@@ -138,21 +154,22 @@ def save_array(array, filename, num_files):
     formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(end))
     print(f"End time: {formatted_time}")
     print(f"Avg time per input/output: {(end-start)/total_size}")
+    print("")
+
+start_saving = time.time()
 
 files = os.listdir('screenshot_files')
 num_files = len(files)
 
-total_size = len(screenshots)
 print(f"Total groups (5 per second of recording): {total_size}")
-print(f"{((total_size/5)-(total_size/5)%60)/60} minutes {(total_size/5)%60} seconds of recording.")
+print(f"{int(((total_size/5)-(total_size/5)%60)/60)} minutes {((total_size/5)%60):.2f} seconds of recording.")
 print("")
-start = time.time()
+start_saving = time.time()
 
 save_array(screenshots,"screenshot_files/screenshots",num_files)
 save_array(output_groups,"output_files/outputs",num_files)
 
-end = time.time()
-print("")
-print(f"Total elapsed time for saving arrays: {(((end-start)/5)-((end-start)/5)%60)/60} minutes {((end-start)/5)%60} seconds")
+end_saving = time.time()
+print(f"Total elapsed time for saving arrays: {int(((end_saving-start_saving)-(end_saving-start_saving)%60)/60)} minutes {(end_saving-start_saving)%60} seconds")
 print("Finished")
 #
