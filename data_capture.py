@@ -9,10 +9,9 @@ import winsound
 
 
 # Create a function to take a screenshot and return it as a greyscale image
-def take_screenshot(width, height):
+def take_screenshot():
     with mss.mss() as sct:
         # Capture the screenshot
-        #sct_img = sct.grab(sct.monitors[1])
         sct_img = sct.grab((0,0,1280,720))
 
         # Convert the screenshot to greyscale
@@ -66,7 +65,7 @@ while True:
     #height = sct.monitors[1]['height']
 
     # Take a screenshot and add it to the list
-    screenshot = take_screenshot(width, height)
+    screenshot = take_screenshot()
     screenshots.append(screenshot)
     screenshot_count += 1
 
@@ -145,8 +144,15 @@ num_files = len(files)
 
 total_size = len(screenshots)
 print(f"Total groups (5 per second of recording): {total_size}")
+print(f"{((total_size/5)-(total_size/5)%60)/60} minutes {(total_size/5)%60} seconds of recording.")
+print("")
+start = time.time()
 
 save_array(screenshots,"screenshot_files/screenshots",num_files)
 save_array(output_groups,"output_files/outputs",num_files)
+
+end = time.time()
+print("")
+print(f"Total elapsed time for saving arrays: {(((end-start)/5)-((end-start)/5)%60)/60} minutes {((end-start)/5)%60} seconds")
 print("Finished")
-#[][][]][][][][]]]][][]]]
+#
