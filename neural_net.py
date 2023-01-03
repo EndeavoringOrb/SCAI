@@ -3,7 +3,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 from skimage.transform import resize
+import time
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
+
+formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(time.time()))
+print(formatted_time)
 
 print("loading arrays...")
 
@@ -17,14 +21,10 @@ train_ratio = 0.8
 train_num = int(num_files*train_ratio)
 
 imgchunks_train = [np.load(f'screenshot_files/screenshots_{i}.npy') for i in range(train_num)]
-print(np.array(imgchunks_train).shape)
 imgchunks_val = [np.load(f'screenshot_files/screenshots_{i}.npy') for i in range(train_num,num_files)]
-print(np.array(imgchunks_val).shape)
 
 outputchunks_train = [np.load(f'output_files/outputs_{i}.npy') for i in range(train_num)]
-print(np.array(outputchunks_train).shape)
 outputchunks_val = [np.load(f'output_files/outputs_{i}.npy') for i in range(train_num,num_files)]
-print(np.array(outputchunks_val).shape)
 
 train_len = len(imgchunks_train)
 val_len = len(imgchunks_val)
@@ -67,6 +67,8 @@ model.compile(optimizer='adam', loss='squared_hinge', metrics=['accuracy'])
 print("input done")
 
 # Add some convolutional layers
+x = tf.keras.layers.Conv2D(16, 5, activation='tanh')(input_layer)
+x = tf.keras.layers.MaxPooling2D((2,2))(x)
 x = tf.keras.layers.Conv2D(32, 5, activation='tanh')(input_layer)
 x = tf.keras.layers.MaxPooling2D((2,2))(x)
 x = tf.keras.layers.Conv2D(64, 3, activation='tanh')(x)
@@ -78,14 +80,14 @@ x = tf.keras.layers.Flatten()(x)
 print("flatten done")
 
 # Add some dense layers
-x = tf.keras.layers.Dense(128, activation='tanh')(x)
-x = tf.keras.layers.Dropout(0.2)(x)
+#x = tf.keras.layers.Dense(128, activation='tanh')(x)
+#x = tf.keras.layers.Dropout(0.2)(x)
 x = tf.keras.layers.Dense(64, activation='tanh')(x)
 x = tf.keras.layers.Dropout(0.2)(x)
 print("dense done")
 
 # Output layer for keyboard actions
-output_layer = tf.keras.layers.Dense(18, activation='tanh', name='output')(x)
+output_layer = tf.keras.layers.Dense(12, activation='tanh', name='output')(x)
 
 print("creating model")
 # Create the model
@@ -102,11 +104,14 @@ print("training model")
 my_training_batch_generator = My_Custom_Generator("train",train_len)
 my_validation_batch_generator = My_Custom_Generator("valid",val_len)
 tf.compat.v1.enable_eager_execution()
-trained = model.fit(my_training_batch_generator, epochs=2, verbose=1, validation_data=my_validation_batch_generator)
+trained = model.fit(my_training_batch_generator, epochs=10, verbose=1, validation_data=my_validation_batch_generator)
 
 # Save the trained model
 print("saving model")
 model.save("model.h5")
+
+formatted_time2 = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(time.time()))
+print(formatted_time2)
 
 # Plot the training and validation loss
 print("plotting")
@@ -126,3 +131,4 @@ plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Val'], loc='lower right')
 plt.show()
+#

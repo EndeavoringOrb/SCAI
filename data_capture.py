@@ -7,6 +7,8 @@ import os
 from skimage.transform import resize
 import winsound
 
+screenshot_frequency = 5 # number per second
+mouse_movement_multiplier = 300
 
 # Create a function to take a screenshot and return it as a greyscale image
 def take_screenshot():
@@ -16,6 +18,40 @@ def take_screenshot():
 
         # Convert the screenshot to greyscale
         return np.array(sct_img)
+
+def check_pressed(array):
+    global left_down
+    global right_down
+    return_array = array
+    if keyboard.is_pressed("w"):
+        return_array[0] = 1
+    if keyboard.is_pressed("a"):
+        return_array[1] = 1
+    if keyboard.is_pressed("s"):
+        return_array[2] = 1
+    if keyboard.is_pressed("d"):
+        return_array[3] = 1
+    if keyboard.is_pressed("shift"):
+        return_array[4] = 1
+    if keyboard.is_pressed("e"):
+        return_array[5] = 1
+    if keyboard.is_pressed("q"):
+        return_array[6] = 1
+    if keyboard.is_pressed("r"):
+        return_array[7] = 1
+    leftpressed = mouse.is_pressed("left")
+    if left_down or mouse.is_pressed("left"):
+        return_array[8] = 1
+    if right_down or mouse.is_pressed("right"):
+        return_array[9] = 1
+    return return_array
+
+def check_pressed_loop(screenshot_frequency,check_num,array):
+    for i in range(check_num):
+        array = check_pressed(array)
+        time.sleep((1/screenshot_frequency)/check_num)
+    return array
+
 
 # Create lists to store keyboard and mouse events
 keyboard_events = []
@@ -32,10 +68,23 @@ height = 1080
 # Get first mouse position
 mouse_pos = mouse.get_position()
 # Define hook functions
+left_down = False
+right_down = False
 def on_mouse_event(event):
+    global left_down
+    global right_down
     mouse_events.append(event)
-def on_keyboard_event(event):
-    keyboard_events.append(event)
+    try:
+        if f"{event.button} {event.event_type}" == "left down" or f"{event.button} {event.event_type}" == "left double":
+            left_down = True
+        elif f"{event.button} {event.event_type}" == "left up":
+            left_down = False
+        if f"{event.button} {event.event_type}" == "right down" or f"{event.button} {event.event_type}" == "right double":
+            right_down = True
+        elif f"{event.button} {event.event_type}" == "right up":
+            right_down = False
+    except AttributeError:
+        pass
 
 # Wait until the "[" key is pressed[]
 print("Ready to start.")
@@ -44,33 +93,31 @@ while not keyboard.is_pressed("["):
 
 # Hook mouse and keyboard
 mouse.hook(on_mouse_event)
-keyboard.hook(on_keyboard_event)
+array_of_pressed_arrays = []
 
 # Capture screenshots and record keyboard and mouse events for 5 seconds
 print("Recording...")
 # Play the sound file
-winsound.PlaySound("beep.wav", winsound.SND_FILENAME)
+winsound.PlaySound("start_stop_beep.wav", winsound.SND_FILENAME)
 start_time = time.time()
 while True:
     # Check if the "]" key is pressed to end the loop
     if keyboard.is_pressed("]"):
         mouse.unhook(on_mouse_event)
-        keyboard.unhook(on_keyboard_event)
         # Play the sound file
-        winsound.PlaySound("beep.wav", winsound.SND_FILENAME)
+        winsound.PlaySound("start_stop_beep.wav", winsound.SND_FILENAME)
+        print("Stopped Recording.")
         break
-
-    # Get the width and height of the primary monitor
-    #width = sct.monitors[1]['width']
-    #height = sct.monitors[1]['height']
-
+    
     # Take a screenshot and add it to the list
     screenshot = take_screenshot()
     screenshots.append(screenshot)
     screenshot_count += 1
 
-    # Sleep for 0.2 seconds to capture screenshots at a rate of 5 per second
-    time.sleep(0.2)
+    #check if things are pressed
+    pressed_array = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0]
+    pressed_array = check_pressed_loop(screenshot_frequency,10,pressed_array)
+    array_of_pressed_arrays.append(pressed_array)
 
 # Group the keyboard and mouse events by time
 print("Grouping inputs...")
@@ -80,64 +127,24 @@ start_grouping = time.time()
 formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(start_grouping))
 print(f"Start time: {formatted_time}")
 
-output_groups = []
-linear_groups = []
-outputs = [0]*18
-for k in range(screenshot_count):
-    for i in range(len(keyboard_events)):
-        if str(type(keyboard_events[i]))[8:12] == "list":
-            continue
-        if ((keyboard_events[i].time-start_time) >= k * 0.2) and ((keyboard_events[i].time-start_time) < (k + 1) * 0.2):
-            if f"{str(keyboard_events[i])[14:20]}" == "w down":
-                outputs[0] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "w up":
-                outputs[1] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "a down":
-                outputs[2] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "a up":
-                outputs[3] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "s down":
-                outputs[4] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "s up":
-                outputs[5] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "d down":
-                outputs[6] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "d up":
-                outputs[7] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "shift down":
-                outputs[8] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "e down":
-                outputs[9] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "q down":
-                outputs[10] = 1
-            elif f"{str(keyboard_events[i])[14:20]}" == "r down":
-                outputs[15] = 1
+for k in range(len(array_of_pressed_arrays)):
     for i in range(len(mouse_events)):
-        if str(type(mouse_events[i]))[8:12] == "list":
-            continue
+        #if str(type(mouse_events[i]))[8:12] == "list":
+        #    continue
         if ((mouse_events[i].time-start_time) >= k * 0.2) and ((mouse_events[i].time-start_time) < (k + 1) * 0.2):
-            try:
-                if f"{mouse_events[i].button} {mouse_events[i].event_type}" == "left down":
-                    outputs[11] = 1
-                elif f"{mouse_events[i].button} {mouse_events[i].event_type}" == "left up":
-                    outputs[12] = 1
-                elif f"{mouse_events[i].button} {mouse_events[i].event_type}" == "right down":
-                    outputs[13] = 1
-                elif f"{mouse_events[i].button} {mouse_events[i].event_type}" == "right up":
-                    outputs[14] = 1
-            except AttributeError:
-                if f"{str(mouse_events[i])[0:9]}" == "MoveEvent":
-                    outputs[16] = np.tanh((mouse_events[i].x-mouse_pos[0])/1000) #mouse x movement
-                    outputs[17] = np.tanh((mouse_events[i].y-mouse_pos[1])/1000) #mouse y movement
-                    mouse_pos = (mouse_events[i].x,mouse_events[i].y)
-    output_groups.append(outputs)
-    outputs = [0]*18
+            if f"{str(mouse_events[i])[0:9]}" == "MoveEvent":
+                array_of_pressed_arrays[k][10] = np.tanh((mouse_events[i].x-mouse_pos[0])/mouse_movement_multiplier) #mouse x movement
+                array_of_pressed_arrays[k][11] = np.tanh((mouse_events[i].y-mouse_pos[1])/mouse_movement_multiplier) #mouse y movement
+                mouse_pos = (mouse_events[i].x,mouse_events[i].y)
 
 #print how long grouping took
 end_grouping = time.time()
 formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(end_grouping))
 print(f"End time: {formatted_time}")
-print(f"Avg time per input/output: {(end_grouping-start_grouping)/total_size}")
+try:
+    print(f"Avg time per input/output: {(end_grouping-start_grouping)/total_size}")
+except ZeroDivisionError:
+    print(f"Average time for grouping cannot be calculated as there were no screenshots taken. The recording was stopped too quickly.")
 print("-------------------------------------------")
 print("")
 
@@ -153,7 +160,10 @@ def save_array(array, filename, num_files):
     end = time.time()
     formatted_time = time.strftime("%A, %B %d %Y %I:%M:%S %p", time.localtime(end))
     print(f"End time: {formatted_time}")
-    print(f"Avg time per input/output: {(end-start)/total_size}")
+    try:
+        print(f"Avg time per input/output: {(end-start)/total_size}")
+    except ZeroDivisionError:
+        print(f"Average time per input/output cannot be calculated as there were no screenshots taken. The recording was stopped too quickly.")
     print("")
 
 start_saving = time.time()
@@ -167,9 +177,9 @@ print("")
 start_saving = time.time()
 
 save_array(screenshots,"screenshot_files/screenshots",num_files)
-save_array(output_groups,"output_files/outputs",num_files)
+save_array(array_of_pressed_arrays,"output_files/outputs",num_files)
 
 end_saving = time.time()
 print(f"Total elapsed time for saving arrays: {int(((end_saving-start_saving)-(end_saving-start_saving)%60)/60)} minutes {(end_saving-start_saving)%60} seconds")
 print("Finished")
-#
+#[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
