@@ -45,10 +45,11 @@ def check_pressed(array):
     return return_array
 
 def check_pressed_loop(screenshot_frequency,check_num,array):
+    array1 = array
     for i in range(check_num):
-        array = check_pressed(array)
+        array1 = check_pressed(array1)
         time.sleep((1/screenshot_frequency)/check_num)
-    return array
+    return array1
 
 
 # Create lists to store keyboard and mouse events
