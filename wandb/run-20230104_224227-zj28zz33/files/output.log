@@ -1,0 +1,18 @@
+Epoch 1/4
+
+33/34 [============================>.] - ETA: 0s - loss: 0.3424 - accuracy: 0.3058
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+34/34 [==============================] - 5s 122ms/step - loss: 0.3426 - accuracy: 0.3054 - val_loss: 0.3814 - val_accuracy: 0.2301
+Epoch 2/4
+33/34 [============================>.] - ETA: 0s - loss: 0.3237 - accuracy: 0.3471
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+34/34 [==============================] - 4s 115ms/step - loss: 0.3243 - accuracy: 0.3459 - val_loss: 0.3813 - val_accuracy: 0.2301
+Epoch 3/4
+33/34 [============================>.] - ETA: 0s - loss: 0.3253 - accuracy: 0.3430
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+34/34 [==============================] - 4s 107ms/step - loss: 0.3251 - accuracy: 0.3432 - val_loss: 0.3820 - val_accuracy: 0.2301
+Epoch 4/4
+33/34 [============================>.] - ETA: 0s - loss: 0.3211 - accuracy: 0.3485
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+
+34/34 [==============================] - 4s 106ms/step - loss: 0.3218 - accuracy: 0.3473 - val_loss: 0.3824 - val_accuracy: 0.2345

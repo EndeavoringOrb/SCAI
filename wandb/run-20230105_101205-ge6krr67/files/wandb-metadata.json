@@ -1,0 +1,63 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2023-01-05T18:12:06.188572",
+    "startedAt": "2023-01-05T18:12:05.722239",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--activation_3=relu",
+        "--activation_4=relu",
+        "--batch_size=33",
+        "--decay_rate=0.5877114101405037",
+        "--decay_steps=212",
+        "--dense1_size=105",
+        "--dense2_size=18",
+        "--dropout=0.15077304025736546",
+        "--epoch=14",
+        "--initial_learning_rate=0.0015294672880989209",
+        "--log_freq=2",
+        "--loss=mean_squared_error",
+        "--metric=accuracy",
+        "--min_delta=0.0005478721507091819",
+        "--optimizer=adam",
+        "--patience=7",
+        "--random_seed=50",
+        "--staircase=true",
+        "--validation_split=0.2309468002653667",
+        "--verbose=1"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\aaron\\CODING\\SCAI\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/EndeavoringOrb/SCAINEW",
+        "commit": "c93f71e0214866c892807f51c1408d9bcaf4613b"
+    },
+    "email": "aaronbelikoff@gmail.com",
+    "root": "C:/Users/aaron/CODING/SCAI",
+    "host": "LAPTOP-PPLOD2NI",
+    "username": "aaron",
+    "executable": "C:\\Users\\aaron\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2000.0
+        }
+    ],
+    "disk": {
+        "total": 475.82519149780273,
+        "used": 421.58155822753906
+    },
+    "memory": {
+        "total": 7.372367858886719
+    }
+}

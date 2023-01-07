@@ -1,0 +1,34 @@
+
+Epoch 1/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 2s - loss: 0.1695 - accuracy: 0.0629 - val_loss: 0.1260 - val_accuracy: 0.3061 - 2s/epoch - 12ms/step
+Epoch 2/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1687 - accuracy: 0.0690 - val_loss: 0.1263 - val_accuracy: 0.3049 - 1s/epoch - 8ms/step
+Epoch 3/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1685 - accuracy: 0.0698 - val_loss: 0.1265 - val_accuracy: 0.3037 - 1s/epoch - 9ms/step
+Epoch 4/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1694 - accuracy: 0.0649 - val_loss: 0.1267 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 5/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1679 - accuracy: 0.0718 - val_loss: 0.1267 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 6/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1705 - accuracy: 0.0585 - val_loss: 0.1267 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 7/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1710 - accuracy: 0.0548 - val_loss: 0.1268 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 8/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1684 - accuracy: 0.0706 - val_loss: 0.1268 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 9/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 2s - loss: 0.1701 - accuracy: 0.0593 - val_loss: 0.1268 - val_accuracy: 0.3024 - 2s/epoch - 10ms/step
+Epoch 10/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+155/155 - 1s - loss: 0.1691 - accuracy: 0.0641 - val_loss: 0.1267 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step
+Epoch 11/16
+155/155 - 1s - loss: 0.1685 - accuracy: 0.0685 - val_loss: 0.1267 - val_accuracy: 0.3024 - 1s/epoch - 8ms/step

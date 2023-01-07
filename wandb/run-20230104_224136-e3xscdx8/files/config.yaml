@@ -1,0 +1,135 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.7
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: batch/batch_step
+      6:
+      - 3
+    - 1: batch/loss
+      5: 1
+      6:
+      - 1
+    - 1: batch/accuracy
+      5: 1
+      6:
+      - 1
+    - 1: batch/learning_rate
+      5: 1
+      6:
+      - 1
+    python_version: 3.9.6
+    start_time: 1672900896.582252
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 2
+      - 7
+      - 23
+      - 37
+      - 38
+      - 39
+      4: 3.9.6
+      5: 0.13.7
+      8:
+      - 3
+      - 5
+activation_1:
+  desc: null
+  value: relu
+activation_2:
+  desc: null
+  value: relu
+activation_3:
+  desc: null
+  value: relu
+architecture:
+  desc: null
+  value: CNN
+batch_size:
+  desc: null
+  value: 18
+conv1_filters:
+  desc: null
+  value: 10
+conv1_kernelsize:
+  desc: null
+  value: 10
+conv2_filters:
+  desc: null
+  value: 18
+conv2_kernelsize:
+  desc: null
+  value: 3
+decay_rate:
+  desc: null
+  value: 0.9799492956833674
+decay_steps:
+  desc: null
+  value: 494
+dense1_size:
+  desc: null
+  value: 125
+dropout:
+  desc: null
+  value: 0.861279310327495
+epoch:
+  desc: null
+  value: 8
+epochs:
+  desc: null
+  value: 6
+initial_learning_rate:
+  desc: null
+  value: 1.7015316736791463e-06
+layer_1:
+  desc: null
+  value: 283
+layer_2:
+  desc: null
+  value: 15
+learning_rate:
+  desc: null
+  value: 0.0007621536255803213
+log_freq:
+  desc: null
+  value: 1
+loss:
+  desc: null
+  value: mean_squared_error
+metric:
+  desc: null
+  value: accuracy
+min_delta:
+  desc: null
+  value: 0.001700496591334276
+optimizer:
+  desc: null
+  value: sgd
+patience:
+  desc: null
+  value: 3
+random_seed:
+  desc: null
+  value: 32
+staircase:
+  desc: null
+  value: 'true'
+validation_split:
+  desc: null
+  value: 0.3854220925196879
+verbose:
+  desc: null
+  value: 2

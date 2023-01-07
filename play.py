@@ -18,7 +18,7 @@ rightdown = False
 def take_screenshot():
     with mss.mss() as sct:
         # Capture the screenshot
-        sct_img = sct.grab(sct.monitors[1])
+        #sct_img = sct.grab(sct.monitors[1])
         sct_img = sct.grab((0,0,1280,720))
 
         # Convert the screenshot to greyscale
@@ -89,7 +89,7 @@ def update_bar_chart():
     canvas.create_text(x2+(window_width-x2)/2,(window_height/2),text=f"({probabilities[10]:.2f},{probabilities[11]:.2f})",font=("Arial", 16))
     canvas.create_line(0,window_height - ((window_height)*action_threshold),window_width,window_height - ((window_height)*action_threshold),fill="red")
     # Move the window to the top
-    window.wm_attributes("-topmost", True)
+    #window.wm_attributes("-topmost", True)
 
 def play_game():
     global probabilities
@@ -98,7 +98,6 @@ def play_game():
     # Check if the "]" key is pressed to end the loop
     if keyboard.is_pressed("]"):
         window.destroy()
-        pass
     
     # Predict actions
     predictions = model.predict(np.array([take_screenshot()]))
@@ -109,6 +108,7 @@ def play_game():
     #update_bar_chart(predictions,["w↓","w↑","a↓","a↑","s↓","s↑","d↓","d↑","shift","e","q","LM↓","LM↑","RM↓","RM↑","r"])
 
     # Act on that prediction
+    
     if (predictions[0]+1)/2 >= action_threshold:
         keyboard.send('w',do_press=True,do_release=False)
         print("w")
@@ -156,7 +156,16 @@ def play_game():
         if rightdown == True:
             mouse.release(button="right")
             print("right up")
-
+    
+    if predictions[10] == 1:
+        predictions[10] = 0.999
+    elif predictions[10] == -1:
+        predictions[10] = -0.999
+    if predictions[11] == 1:
+        predictions[11] = 0.999
+    elif predictions[11] == -1:
+        predictions[11] = -0.999
+    
     mouse.move(np.arctanh(predictions[10])*mouse_movement_multiplier, np.arctanh(predictions[11])*mouse_movement_multiplier, absolute=False, duration=0.2)
 
 def run_funcs():
@@ -167,4 +176,4 @@ def run_funcs():
 # Run the Tkinter event loop
 window.after(1,run_funcs())
 window.mainloop()
-#
+#wasdeqrwasdeqrwasdeqrwasdeqrwasdeqrwasdeqr

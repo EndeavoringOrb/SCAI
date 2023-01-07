@@ -1,0 +1,10 @@
+wandb_version: 1
+
+decay_rate:
+  value: 1.817515553307256
+decay_steps:
+  value: 1204
+initial_learning_rate:
+  value: 0.0029590190088070924
+metric:
+  value: accuracy

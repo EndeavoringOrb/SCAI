@@ -1,0 +1,46 @@
+
+Epoch 1/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+12/12 - 5s - loss: 0.3509 - accuracy: 0.2816 - val_loss: 0.3112 - val_accuracy: 0.3503 - 5s/epoch - 388ms/step
+Epoch 2/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.2s
+12/12 - 4s - loss: 0.3629 - accuracy: 0.2611 - val_loss: 0.3103 - val_accuracy: 0.3503 - 4s/epoch - 306ms/step
+Epoch 3/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3568 - accuracy: 0.2737 - val_loss: 0.3098 - val_accuracy: 0.3503 - 3s/epoch - 287ms/step
+Epoch 4/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+12/12 - 3s - loss: 0.3449 - accuracy: 0.2943 - val_loss: 0.3090 - val_accuracy: 0.3563 - 3s/epoch - 283ms/step
+Epoch 5/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3477 - accuracy: 0.2880 - val_loss: 0.3083 - val_accuracy: 0.3563 - 3s/epoch - 259ms/step
+Epoch 6/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3492 - accuracy: 0.2864 - val_loss: 0.3076 - val_accuracy: 0.3593 - 3s/epoch - 275ms/step
+Epoch 7/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3329 - accuracy: 0.3149 - val_loss: 0.3071 - val_accuracy: 0.3563 - 3s/epoch - 276ms/step
+Epoch 8/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 4s - loss: 0.3443 - accuracy: 0.2959 - val_loss: 0.3068 - val_accuracy: 0.3563 - 4s/epoch - 307ms/step
+Epoch 9/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3465 - accuracy: 0.2975 - val_loss: 0.3065 - val_accuracy: 0.3563 - 3s/epoch - 273ms/step
+Epoch 10/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+12/12 - 3s - loss: 0.3320 - accuracy: 0.3275 - val_loss: 0.3064 - val_accuracy: 0.3533 - 3s/epoch - 271ms/step
+Epoch 11/11
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+12/12 - 4s - loss: 0.3436 - accuracy: 0.2975 - val_loss: 0.3059 - val_accuracy: 0.3563 - 4s/epoch - 296ms/step

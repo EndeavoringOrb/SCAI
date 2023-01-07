@@ -48,7 +48,6 @@ class My_Custom_Generator(tf.keras.utils.Sequence):
             return [x_batch,y_batch]
 print("creating model")
 # Set up the input layer
-input_layer = tf.keras.layers.Input(shape=(720,1280,4))
 '''
 model = tf.keras.Sequential()
 model.add(tf.keras.Input(shape=(720,1280,4)))
@@ -64,12 +63,13 @@ model.add(tf.keras.Dropout(0.2))
 model.add(tf.keras.Dense(16, activation='softmax', name='keyboard'))
 model.compile(optimizer='adam', loss='squared_hinge', metrics=['accuracy'])
 '''
+input_layer = tf.keras.layers.Input(shape=(720,1280,4))
 print("input done")
 
 # Add some convolutional layers
 x = tf.keras.layers.Conv2D(16, 5, activation='tanh')(input_layer)
 x = tf.keras.layers.MaxPooling2D((2,2))(x)
-x = tf.keras.layers.Conv2D(32, 5, activation='tanh')(input_layer)
+x = tf.keras.layers.Conv2D(32, 5, activation='tanh')(x)
 x = tf.keras.layers.MaxPooling2D((2,2))(x)
 x = tf.keras.layers.Conv2D(64, 3, activation='tanh')(x)
 x = tf.keras.layers.MaxPooling2D((2,2))(x)

@@ -1,0 +1,28 @@
+Epoch 1/16
+77/89 [========================>.....] - ETA: 0s - loss: 35.6336 - accuracy: 0.1279
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+89/89 [==============================] - 2s 19ms/step - loss: 31.3566 - accuracy: 0.1228 - val_loss: 2.5084 - val_accuracy: 0.0000e+00
+Epoch 2/16
+81/89 [==========================>...] - ETA: 0s - loss: 2.3934 - accuracy: 0.1102
+89/89 [==============================] - 2s 19ms/step - loss: 2.3931 - accuracy: 0.1178 - val_loss: 2.5173 - val_accuracy: 0.0000e+00
+Epoch 3/16
+77/89 [========================>.....] - ETA: 0s - loss: 2.3900 - accuracy: 0.1270
+89/89 [==============================] - 1s 15ms/step - loss: 2.3897 - accuracy: 0.1262 - val_loss: 2.5263 - val_accuracy: 0.0000e+00
+Epoch 4/16
+77/89 [========================>.....] - ETA: 0s - loss: 2.3868 - accuracy: 0.1145
+89/89 [==============================] - 1s 13ms/step - loss: 2.3868 - accuracy: 0.1111 - val_loss: 2.5350 - val_accuracy: 0.0000e+00
+Epoch 5/16
+79/89 [=========================>....] - ETA: 0s - loss: 2.3837 - accuracy: 0.1289
+89/89 [==============================] - 1s 13ms/step - loss: 2.3834 - accuracy: 0.1266 - val_loss: 2.5438 - val_accuracy: 0.0000e+00
+Epoch 6/16
+89/89 [==============================] - 1s 14ms/step - loss: 2.3805 - accuracy: 0.1316 - val_loss: 2.5505 - val_accuracy: 0.0000e+00
+Epoch 7/16
+79/89 [=========================>....] - ETA: 0s - loss: 2.3788 - accuracy: 0.1285
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+89/89 [==============================] - 1s 13ms/step - loss: 2.3790 - accuracy: 0.1257 - val_loss: 2.5554 - val_accuracy: 0.0000e+00
+Epoch 8/16
+78/89 [=========================>....] - ETA: 0s - loss: 2.3770 - accuracy: 0.1296
+89/89 [==============================] - 1s 13ms/step - loss: 2.3770 - accuracy: 0.1266 - val_loss: 2.5604 - val_accuracy: 0.0000e+00
+Epoch 9/16
+
+89/89 [==============================] - 1s 15ms/step - loss: 2.3752 - accuracy: 0.1270 - val_loss: 2.5655 - val_accuracy: 0.0000e+00

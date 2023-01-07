@@ -1,0 +1,31 @@
+2023-01-05 16:46:35,486 INFO    MainThread:5312 [wandb_setup.py:_flush():68] Configure stats pid to 5312
+2023-01-05 16:46:35,487 INFO    MainThread:5312 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aaron\.config\wandb\settings
+2023-01-05 16:46:35,488 INFO    MainThread:5312 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aaron\CODING\SCAI\wandb\settings
+2023-01-05 16:46:35,488 INFO    MainThread:5312 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-01-05 16:46:35,488 INFO    MainThread:5312 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'health_NN.py', 'program': 'c:\\Users\\aaron\\CODING\\SCAI\\health_NN.py'}
+2023-01-05 16:46:35,490 INFO    MainThread:5312 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\aaron\CODING\SCAI\wandb\run-20230105_164635-2c5oq67j\logs\debug.log
+2023-01-05 16:46:35,491 INFO    MainThread:5312 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\aaron\CODING\SCAI\wandb\run-20230105_164635-2c5oq67j\logs\debug-internal.log
+2023-01-05 16:46:35,491 INFO    MainThread:5312 [wandb_init.py:init():516] calling init triggers
+2023-01-05 16:46:35,491 INFO    MainThread:5312 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'dense1_size': 128, 'activation_3': 'linear', 'dense2_size': 64, 'activation_4': 'linear', 'dense3_size': 32, 'activation_5': 'sigmoid', 'initial_learning_rate': 0.004, 'decay_steps': 1000, 'decay_rate': 0.99, 'staircase': False, 'dropout': 0, 'optimizer': 'sgd', 'loss': 'categorical_crossentropy', 'metric': 'accuracy', 'epoch': 10000, 'batch_size': 512, 'verbose': 1, 'validation_split': 0.2, 'min_delta': 0.001, 'patience': 300, 'log_freq': 100}
+2023-01-05 16:46:35,492 INFO    MainThread:5312 [wandb_init.py:init():569] starting backend
+2023-01-05 16:46:35,492 INFO    MainThread:5312 [wandb_init.py:init():573] setting up manager
+2023-01-05 16:46:35,506 INFO    MainThread:5312 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2023-01-05 16:46:35,538 INFO    MainThread:5312 [wandb_init.py:init():580] backend started and connected
+2023-01-05 16:46:35,544 INFO    MainThread:5312 [wandb_init.py:init():658] updated telemetry
+2023-01-05 16:46:36,179 INFO    MainThread:5312 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-01-05 16:46:36,554 INFO    MainThread:5312 [wandb_run.py:_on_init():2006] communicating current version
+2023-01-05 16:46:36,727 INFO    MainThread:5312 [wandb_run.py:_on_init():2010] got version response 
+2023-01-05 16:46:36,728 INFO    MainThread:5312 [wandb_init.py:init():728] starting run threads in backend
+2023-01-05 16:46:37,373 INFO    MainThread:5312 [wandb_run.py:_console_start():1986] atexit reg
+2023-01-05 16:46:37,374 INFO    MainThread:5312 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-01-05 16:46:37,376 INFO    MainThread:5312 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-01-05 16:46:37,377 INFO    MainThread:5312 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-01-05 16:46:37,378 INFO    MainThread:5312 [wandb_init.py:init():765] run started, returning control to user process
+2023-01-05 17:01:32,049 INFO    MainThread:5312 [wandb_run.py:_finish():1753] finishing run orbs/SCAI_Health/2c5oq67j
+2023-01-05 17:01:32,066 INFO    MainThread:5312 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2023-01-05 17:01:32,076 INFO    MainThread:5312 [wandb_run.py:_restore():1938] restore
+2023-01-05 17:01:32,094 INFO    MainThread:5312 [wandb_run.py:_restore():1944] restore done
+2023-01-05 17:01:37,717 INFO    MainThread:5312 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-05 17:01:37,733 INFO    MainThread:5312 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-05 17:01:37,841 INFO    MainThread:5312 [wandb_run.py:_footer_sync_info():3364] logging synced files

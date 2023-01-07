@@ -1,0 +1,42 @@
+wandb_version: 1
+
+activation_3:
+  value: sigmoid
+activation_4:
+  value: sigmoid
+batch_size:
+  value: 88
+decay_rate:
+  value: 1.2004245218984209
+decay_steps:
+  value: 140
+dense1_size:
+  value: 138
+dense2_size:
+  value: 30
+dropout:
+  value: 0.30033181413344306
+epoch:
+  value: 20
+initial_learning_rate:
+  value: 0.0018568410440110777
+log_freq:
+  value: 2
+loss:
+  value: categorical_crossentropy
+metric:
+  value: accuracy
+min_delta:
+  value: 0.001977484251335422
+optimizer:
+  value: sgd
+patience:
+  value: 13
+random_seed:
+  value: 89
+staircase:
+  value: 'false'
+validation_split:
+  value: 0.44671738944243145
+verbose:
+  value: 4

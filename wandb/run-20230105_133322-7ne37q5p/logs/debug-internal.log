@@ -1,0 +1,45 @@
+2023-01-05 13:33:22,204 INFO    StreamThr :19736 [internal.py:wandb_internal():87] W&B internal server running at pid: 19736, started at: 2023-01-05 13:33:22.202989
+2023-01-05 13:33:22,222 DEBUG   HandlerThread:19736 [handler.py:handle_request():139] handle_request: status
+2023-01-05 13:33:22,231 DEBUG   SenderThread:19736 [sender.py:send_request():317] send_request: status
+2023-01-05 13:33:22,240 DEBUG   SenderThread:19736 [sender.py:send():303] send: header
+2023-01-05 13:33:22,241 INFO    WriterThread:19736 [datastore.py:open_for_write():75] open: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\run-7ne37q5p.wandb
+2023-01-05 13:33:22,302 DEBUG   SenderThread:19736 [sender.py:send():303] send: run
+2023-01-05 13:33:22,661 DEBUG   HandlerThread:19736 [handler.py:handle_request():139] handle_request: check_version
+2023-01-05 13:33:22,696 INFO    SenderThread:19736 [dir_watcher.py:__init__():216] watching files in: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files
+2023-01-05 13:33:22,698 INFO    SenderThread:19736 [sender.py:_start_run_threads():928] run started: 7ne37q5p with start time 1672954402.19399
+2023-01-05 13:33:22,699 DEBUG   SenderThread:19736 [sender.py:send():303] send: summary
+2023-01-05 13:33:22,701 INFO    SenderThread:19736 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-05 13:33:22,703 DEBUG   SenderThread:19736 [sender.py:send_request():317] send_request: check_version
+2023-01-05 13:33:22,925 DEBUG   HandlerThread:19736 [handler.py:handle_request():139] handle_request: run_start
+2023-01-05 13:33:22,947 DEBUG   HandlerThread:19736 [system_info.py:__init__():31] System info init
+2023-01-05 13:33:22,947 DEBUG   HandlerThread:19736 [system_info.py:__init__():46] System info init done
+2023-01-05 13:33:22,948 INFO    HandlerThread:19736 [system_monitor.py:start():150] Starting system monitor
+2023-01-05 13:33:22,950 INFO    HandlerThread:19736 [system_monitor.py:probe():171] Collecting system info
+2023-01-05 13:33:22,951 INFO    SystemMonitor:19736 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-05 13:33:22,954 DEBUG   HandlerThread:19736 [system_info.py:probe():195] Probing system
+2023-01-05 13:33:22,957 INFO    SystemMonitor:19736 [interfaces.py:start():168] Started cpu
+2023-01-05 13:33:22,972 INFO    SystemMonitor:19736 [interfaces.py:start():168] Started disk
+2023-01-05 13:33:22,976 INFO    SystemMonitor:19736 [interfaces.py:start():168] Started memory
+2023-01-05 13:33:22,979 DEBUG   HandlerThread:19736 [system_info.py:_probe_git():180] Probing git
+2023-01-05 13:33:22,981 INFO    SystemMonitor:19736 [interfaces.py:start():168] Started network
+2023-01-05 13:33:23,183 DEBUG   HandlerThread:19736 [system_info.py:_probe_git():188] Probing git done
+2023-01-05 13:33:23,184 DEBUG   HandlerThread:19736 [system_info.py:probe():241] Probing system done
+2023-01-05 13:33:23,185 DEBUG   HandlerThread:19736 [system_monitor.py:probe():180] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.6', 'heartbeatAt': '2023-01-05T21:33:22.955912', 'startedAt': '2023-01-05T21:33:22.135975', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\aaron\\CODING\\SCAI\\health_NN.py', 'codePath': 'health_NN.py', 'git': {'remote': 'https://github.com/EndeavoringOrb/SCAINEW', 'commit': 'c93f71e0214866c892807f51c1408d9bcaf4613b'}, 'email': 'aaronbelikoff@gmail.com', 'root': 'C:/Users/aaron/CODING/SCAI', 'host': 'LAPTOP-PPLOD2NI', 'username': 'aaron', 'executable': 'C:\\Users\\aaron\\AppData\\Local\\Programs\\Python\\Python39\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2000.0, 'min': 0.0, 'max': 2000.0}, 'cpu_freq_per_core': [{'current': 2000.0, 'min': 0.0, 'max': 2000.0}], 'disk': {'total': 475.82519149780273, 'used': 422.1885986328125}, 'memory': {'total': 7.372367858886719}}
+2023-01-05 13:33:23,185 INFO    HandlerThread:19736 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-05 13:33:23,185 INFO    HandlerThread:19736 [system_monitor.py:probe():184] Publishing system info
+2023-01-05 13:33:23,186 DEBUG   HandlerThread:19736 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-05 13:33:23,190 DEBUG   HandlerThread:19736 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-05 13:33:23,193 INFO    HandlerThread:19736 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-05 13:33:23,472 DEBUG   SenderThread:19736 [sender.py:send():303] send: files
+2023-01-05 13:33:23,473 INFO    SenderThread:19736 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-05 13:33:23,520 DEBUG   HandlerThread:19736 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 13:33:23,522 DEBUG   SenderThread:19736 [sender.py:send_request():317] send_request: stop_status
+2023-01-05 13:33:23,718 INFO    Thread-23 :19736 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files\wandb-metadata.json
+2023-01-05 13:33:23,721 INFO    Thread-23 :19736 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files\requirements.txt
+2023-01-05 13:33:23,728 DEBUG   SenderThread:19736 [sender.py:send():303] send: telemetry
+2023-01-05 13:33:23,730 INFO    Thread-23 :19736 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files\wandb-summary.json
+2023-01-05 13:33:24,121 INFO    Thread-28 :19736 [upload_job.py:push():143] Uploaded file C:\Users\aaron\AppData\Local\Temp\tmp7k0_8_cywandb\2jv59p5q-wandb-metadata.json
+2023-01-05 13:33:24,715 INFO    Thread-23 :19736 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files\output.log
+2023-01-05 13:33:26,740 INFO    Thread-23 :19736 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_133322-7ne37q5p\files\output.log
+2023-01-05 13:33:38,753 DEBUG   HandlerThread:19736 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-05 13:33:38,753 DEBUG   SenderThread:19736 [sender.py:send_request():317] send_request: stop_status

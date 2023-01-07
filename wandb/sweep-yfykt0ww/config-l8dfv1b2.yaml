@@ -1,0 +1,42 @@
+wandb_version: 1
+
+activation_3:
+  value: relu
+activation_4:
+  value: relu
+batch_size:
+  value: 28
+decay_rate:
+  value: 0.5134707601641899
+decay_steps:
+  value: 401
+dense1_size:
+  value: 46
+dense2_size:
+  value: 42
+dropout:
+  value: 0.05156404085723017
+epoch:
+  value: 14
+initial_learning_rate:
+  value: 0.0016601898042796184
+log_freq:
+  value: 2
+loss:
+  value: categorical_crossentropy
+metric:
+  value: accuracy
+min_delta:
+  value: 0.0008169577239108127
+optimizer:
+  value: adamax
+patience:
+  value: 14
+random_seed:
+  value: 68
+staircase:
+  value: 'false'
+validation_split:
+  value: 0.36703105755831533
+verbose:
+  value: 2

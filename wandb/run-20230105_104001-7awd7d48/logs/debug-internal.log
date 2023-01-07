@@ -1,0 +1,96 @@
+2023-01-05 10:40:01,201 INFO    StreamThr :1920 [internal.py:wandb_internal():87] W&B internal server running at pid: 1920, started at: 2023-01-05 10:40:01.200917
+2023-01-05 10:40:01,205 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: status
+2023-01-05 10:40:01,211 DEBUG   SenderThread:1920 [sender.py:send_request():317] send_request: status
+2023-01-05 10:40:01,231 DEBUG   SenderThread:1920 [sender.py:send():303] send: header
+2023-01-05 10:40:01,231 INFO    WriterThread:1920 [datastore.py:open_for_write():75] open: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_104001-7awd7d48\run-7awd7d48.wandb
+2023-01-05 10:40:01,326 DEBUG   SenderThread:1920 [sender.py:send():303] send: run
+2023-01-05 10:40:01,601 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:01,602 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:02,936 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:02,937 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:05,324 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:05,324 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:05,325 ERROR   SenderThread:1920 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\lib\retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal_api.py", line 209, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 39, in execute
+    request.raise_for_status()
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2023-01-05 10:40:06,370 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:09,895 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:09,896 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:11,416 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:16,477 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:18,326 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:18,327 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:21,530 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:26,591 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:31,649 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:36,118 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:40:36,118 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:40:36,720 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:41,781 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:46,830 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:51,893 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:40:56,950 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:03,039 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-05 10:41:08,075 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:11,763 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:41:11,764 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:41:13,127 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:18,182 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:23,240 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:28,290 DEBUG   HandlerThread:1920 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-05 10:41:31,093 WARNING StreamThr :1920 [internal.py:is_dead():386] Internal process exiting, parent pid 17212 disappeared
+2023-01-05 10:41:31,093 ERROR   StreamThr :1920 [internal.py:wandb_internal():146] Internal process shutdown.
+2023-01-05 10:41:31,305 INFO    HandlerThread:1920 [handler.py:finish():814] shutting down handler
+2023-01-05 10:41:31,305 INFO    WriterThread:1920 [datastore.py:close():279] close: C:\Users\aaron\CODING\SCAI\wandb\run-20230105_104001-7awd7d48\run-7awd7d48.wandb
+2023-01-05 10:42:16,741 ERROR   SenderThread:1920 [internal_api.py:execute():212] 409 response executing GraphQL.
+2023-01-05 10:42:16,742 ERROR   SenderThread:1920 [internal_api.py:execute():213] {"errors":[{"message":"run orbs/SCAI_Health/7awd7d48 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-01-05 10:42:16,744 ERROR   StreamThr :1920 [internal.py:wandb_internal():162] Thread SenderThread:
+Traceback (most recent call last):
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal_api.py", line 1515, in upsert_run
+    response = self.gql(
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\lib\retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal_api.py", line 209, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 39, in execute
+    request.raise_for_status()
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal_util.py", line 49, in run
+    self._run()
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal_util.py", line 100, in _run
+    self._process(record)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\internal.py", line 309, in _process
+    self._sm.send(record)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\sender.py", line 305, in send
+    send_handler(record)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\sender.py", line 797, in send_run
+    self._init_run(run, config_value_dict)
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\internal\sender.py", line 823, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "C:\Users\aaron\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\apis\normalize.py", line 28, in wrapper
+    raise CommError(err.response, err)
+wandb.errors.CommError: <Response [409]>

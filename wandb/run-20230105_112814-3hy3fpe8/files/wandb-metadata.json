@@ -1,0 +1,42 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2023-01-05T19:28:14.661900",
+    "startedAt": "2023-01-05T19:28:14.169319",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\aaron\\CODING\\SCAI\\health_NN.py",
+    "codePath": "health_NN.py",
+    "git": {
+        "remote": "https://github.com/EndeavoringOrb/SCAINEW",
+        "commit": "c93f71e0214866c892807f51c1408d9bcaf4613b"
+    },
+    "email": "aaronbelikoff@gmail.com",
+    "root": "C:/Users/aaron/CODING/SCAI",
+    "host": "LAPTOP-PPLOD2NI",
+    "username": "aaron",
+    "executable": "C:\\Users\\aaron\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2000.0
+        }
+    ],
+    "disk": {
+        "total": 475.82519149780273,
+        "used": 421.7284049987793
+    },
+    "memory": {
+        "total": 7.372367858886719
+    }
+}

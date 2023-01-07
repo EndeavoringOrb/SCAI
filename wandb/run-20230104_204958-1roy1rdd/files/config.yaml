@@ -1,0 +1,70 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.7
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.6
+    start_time: 1672894198.619507
+    t:
+      1:
+      - 2
+      - 3
+      - 55
+      2:
+      - 2
+      - 3
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.9.6
+      5: 0.13.7
+      8:
+      - 3
+      - 5
+activation_1:
+  desc: null
+  value: relu
+activation_2:
+  desc: null
+  value: softmax
+batch_size:
+  desc: null
+  value: 32
+dropout:
+  desc: null
+  value: 0.2
+epoch:
+  desc: null
+  value: 8
+layer_1:
+  desc: null
+  value: 512
+layer_2:
+  desc: null
+  value: 10
+loss:
+  desc: null
+  value: mean_squared_error
+metric:
+  desc: null
+  value: accuracy
+min_delta:
+  desc: null
+  value: 0.001
+optimizer:
+  desc: null
+  value: sgd
+patience:
+  desc: null
+  value: 5
+validation_split:
+  desc: null
+  value: 0.2
+verbose:
+  desc: null
+  value: 1

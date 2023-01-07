@@ -1,0 +1,25 @@
+Epoch 1/14
+46/49 [===========================>..] - ETA: 0s - loss: 29.9020 - accuracy: 0.1308
+49/49 [==============================] - 2s 27ms/step - loss: 28.4172 - accuracy: 0.1319 - val_loss: 3.8933 - val_accuracy: 0.0000e+00
+Epoch 2/14
+44/49 [=========================>....] - ETA: 0s - loss: 2.3293 - accuracy: 0.1381
+49/49 [==============================] - 1s 22ms/step - loss: 2.3348 - accuracy: 0.1389 - val_loss: 4.7029 - val_accuracy: 0.0000e+00
+Epoch 3/14
+47/49 [===========================>..] - ETA: 0s - loss: 2.3154 - accuracy: 0.1501
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+49/49 [==============================] - 1s 26ms/step - loss: 2.3136 - accuracy: 0.1494 - val_loss: 4.5050 - val_accuracy: 0.0000e+00
+Epoch 4/14
+48/49 [============================>.] - ETA: 0s - loss: 2.3173 - accuracy: 0.1596
+49/49 [==============================] - 1s 20ms/step - loss: 2.3161 - accuracy: 0.1591 - val_loss: 4.5068 - val_accuracy: 0.0000e+00
+Epoch 5/14
+48/49 [============================>.] - ETA: 0s - loss: 2.2806 - accuracy: 0.1678
+49/49 [==============================] - 1s 21ms/step - loss: 2.2776 - accuracy: 0.1688 - val_loss: 4.6938 - val_accuracy: 0.0000e+00
+Epoch 6/14
+49/49 [==============================] - ETA: 0s - loss: 2.2619 - accuracy: 0.1672
+49/49 [==============================] - 1s 21ms/step - loss: 2.2619 - accuracy: 0.1672 - val_loss: 4.6711 - val_accuracy: 0.0000e+00
+Epoch 7/14
+39/49 [======================>.......] - ETA: 0s - loss: 2.2512 - accuracy: 0.1761
+49/49 [==============================] - 1s 24ms/step - loss: 2.2401 - accuracy: 0.1793 - val_loss: 5.1901 - val_accuracy: 0.0000e+00
+Epoch 8/14
+
+49/49 [==============================] - 1s 20ms/step - loss: 2.2461 - accuracy: 0.1801 - val_loss: 4.8618 - val_accuracy: 0.0000e+00

@@ -1,0 +1,12 @@
+Create sweep with ID: h2wemzrz
+Sweep URL: https://wandb.ai/orbs/SCAI_Damage/sweeps/h2wemzrz
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
+2023-01-04 21:37:19,957 - wandb.wandb_agent - INFO - Running runs: []
+2023-01-04 21:37:20,228 - wandb.wandb_agent - INFO - Agent received command: run
+2023-01-04 21:37:20,229 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 16
+	epochs: 10
+	lr: 0.027977711860086296
+2023-01-04 21:37:20,237 - wandb.wandb_agent - INFO - About to run command: python  --batch_size=16 --epochs=10 --lr=0.027977711860086296
+2023-01-04 21:37:25,266 - wandb.wandb_agent - INFO - Running runs: ['le8j2blo']
+2023-01-04 21:37:25,267 - wandb.wandb_agent - INFO - Cleaning up finished run: le8j2blo

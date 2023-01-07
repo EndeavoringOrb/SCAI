@@ -1,0 +1,40 @@
+wandb_version: 1
+
+activation_3:
+  value: tanh
+activation_4:
+  value: tanh
+batch_size:
+  value: 113
+decay_rate:
+  value: 0.5124664915539201
+decay_steps:
+  value: 171
+dense1_size:
+  value: 90
+dense2_size:
+  value: 93
+dropout:
+  value: 0.2576364584413541
+epoch:
+  value: 24
+initial_learning_rate:
+  value: 0.0016685152965919665
+log_freq:
+  value: 2
+loss:
+  value: mean_squared_error
+metric:
+  value: accuracy
+min_delta:
+  value: 0.0012982618578188726
+optimizer:
+  value: adam
+patience:
+  value: 5
+staircase:
+  value: 'true'
+validation_split:
+  value: 0.38361614483270057
+verbose:
+  value: 4

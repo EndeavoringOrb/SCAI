@@ -1,0 +1,31 @@
+2023-01-05 09:49:58,581 INFO    MainThread:25584 [wandb_setup.py:_flush():68] Configure stats pid to 25584
+2023-01-05 09:49:58,582 INFO    MainThread:25584 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aaron\.config\wandb\settings
+2023-01-05 09:49:58,582 INFO    MainThread:25584 [wandb_setup.py:_flush():68] Loading settings from C:\Users\aaron\CODING\SCAI\wandb\settings
+2023-01-05 09:49:58,582 INFO    MainThread:25584 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-01-05 09:49:58,582 INFO    MainThread:25584 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'health_NN.py', 'program': 'c:\\Users\\aaron\\CODING\\SCAI\\health_NN.py'}
+2023-01-05 09:49:58,583 INFO    MainThread:25584 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\aaron\CODING\SCAI\wandb\run-20230105_094958-26113nje\logs\debug.log
+2023-01-05 09:49:58,584 INFO    MainThread:25584 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\aaron\CODING\SCAI\wandb\run-20230105_094958-26113nje\logs\debug-internal.log
+2023-01-05 09:49:58,584 INFO    MainThread:25584 [wandb_init.py:init():516] calling init triggers
+2023-01-05 09:49:58,584 INFO    MainThread:25584 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'conv1_filters': 8, 'conv1_kernelsize': 5, 'activation_1': 'relu', 'conv2_filters': 16, 'conv2_kernelsize': 3, 'activation_2': 'relu', 'dense1_size': 64, 'activation_3': 'relu', 'dense2_size': 32, 'activation_4': 'relu', 'initial_learning_rate': 1e-06, 'decay_steps': 300, 'decay_rate': 0.5, 'staircase': True, 'dropout': 0.2, 'optimizer': 'sgd', 'loss': 'mean_squared_error', 'metric': 'accuracy', 'epoch': 8, 'batch_size': 32, 'verbose': 1, 'validation_split': 0.2, 'min_delta': 0.001, 'patience': 5, 'log_freq': 1}
+2023-01-05 09:49:58,585 INFO    MainThread:25584 [wandb_init.py:init():569] starting backend
+2023-01-05 09:49:58,585 INFO    MainThread:25584 [wandb_init.py:init():573] setting up manager
+2023-01-05 09:49:58,591 INFO    MainThread:25584 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2023-01-05 09:49:58,605 INFO    MainThread:25584 [wandb_init.py:init():580] backend started and connected
+2023-01-05 09:49:58,610 INFO    MainThread:25584 [wandb_init.py:init():658] updated telemetry
+2023-01-05 09:49:59,032 INFO    MainThread:25584 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-01-05 09:49:59,350 INFO    MainThread:25584 [wandb_run.py:_on_init():2006] communicating current version
+2023-01-05 09:49:59,476 INFO    MainThread:25584 [wandb_run.py:_on_init():2010] got version response 
+2023-01-05 09:49:59,476 INFO    MainThread:25584 [wandb_init.py:init():728] starting run threads in backend
+2023-01-05 09:49:59,884 INFO    MainThread:25584 [wandb_run.py:_console_start():1986] atexit reg
+2023-01-05 09:49:59,885 INFO    MainThread:25584 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-01-05 09:49:59,886 INFO    MainThread:25584 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-01-05 09:49:59,887 INFO    MainThread:25584 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-01-05 09:49:59,888 INFO    MainThread:25584 [wandb_init.py:init():765] run started, returning control to user process
+2023-01-05 09:50:17,481 INFO    MainThread:25584 [wandb_run.py:_finish():1753] finishing run orbs/SCAI_Health/26113nje
+2023-01-05 09:50:17,481 INFO    MainThread:25584 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2023-01-05 09:50:17,482 INFO    MainThread:25584 [wandb_run.py:_restore():1938] restore
+2023-01-05 09:50:17,482 INFO    MainThread:25584 [wandb_run.py:_restore():1944] restore done
+2023-01-05 09:50:24,613 INFO    MainThread:25584 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-05 09:50:24,616 INFO    MainThread:25584 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-05 09:50:24,641 INFO    MainThread:25584 [wandb_run.py:_footer_sync_info():3364] logging synced files

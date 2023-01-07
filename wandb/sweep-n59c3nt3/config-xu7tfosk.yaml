@@ -1,0 +1,40 @@
+wandb_version: 1
+
+activation_3:
+  value: sigmoid
+activation_4:
+  value: tanh
+batch_size:
+  value: 73
+decay_rate:
+  value: 0.49335827012145417
+decay_steps:
+  value: 193
+dense1_size:
+  value: 104
+dense2_size:
+  value: 107
+dropout:
+  value: 0.1337940997870378
+epoch:
+  value: 7
+initial_learning_rate:
+  value: 0.0003994217867692099
+log_freq:
+  value: 2
+loss:
+  value: categorical_crossentropy
+metric:
+  value: accuracy
+min_delta:
+  value: 0.0015892032995445447
+optimizer:
+  value: adam
+patience:
+  value: 13
+staircase:
+  value: 'false'
+validation_split:
+  value: 0.36910071099539854
+verbose:
+  value: 3

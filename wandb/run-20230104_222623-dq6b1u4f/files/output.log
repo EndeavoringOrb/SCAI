@@ -1,0 +1,13 @@
+
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
+Create sweep with ID: ry83pwbj
+Sweep URL: https://wandb.ai/orbs/SCAI_Damage/sweeps/ry83pwbj
+2023-01-04 22:26:32,258 - wandb.wandb_agent - INFO - Running runs: []
+2023-01-04 22:26:32,516 - wandb.wandb_agent - INFO - Agent received command: run
+2023-01-04 22:26:32,518 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size: 32
+	epochs: 15
+	lr: 0.05501680764017425
+2023-01-04 22:26:32,528 - wandb.wandb_agent - INFO - About to run command: python  --batch_size=32 --epochs=15 --lr=0.05501680764017425
+2023-01-04 22:26:37,551 - wandb.wandb_agent - INFO - Running runs: ['zv9ar3av']
+2023-01-04 22:26:37,553 - wandb.wandb_agent - INFO - Cleaning up finished run: zv9ar3av

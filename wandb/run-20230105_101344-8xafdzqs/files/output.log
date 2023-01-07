@@ -1,0 +1,22 @@
+
+Epoch 1/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+104/104 - 2s - loss: 0.1618 - accuracy: 0.1010 - val_loss: 0.1525 - val_accuracy: 0.1351 - 2s/epoch - 18ms/step
+Epoch 2/16
+104/104 - 1s - loss: 0.1599 - accuracy: 0.1121 - val_loss: 0.1742 - val_accuracy: 0.0016 - 1s/epoch - 11ms/step
+Epoch 3/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+104/104 - 1s - loss: 0.1576 - accuracy: 0.1255 - val_loss: 0.1782 - val_accuracy: 0.0000e+00 - 1s/epoch - 13ms/step
+Epoch 4/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+104/104 - 1s - loss: 0.1585 - accuracy: 0.1196 - val_loss: 0.1809 - val_accuracy: 0.0000e+00 - 1s/epoch - 12ms/step
+Epoch 5/16
+104/104 - 1s - loss: 0.1578 - accuracy: 0.1251 - val_loss: 0.1812 - val_accuracy: 0.0000e+00 - 1s/epoch - 12ms/step
+Epoch 6/16
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+104/104 - 1s - loss: 0.1575 - accuracy: 0.1259 - val_loss: 0.1815 - val_accuracy: 0.0000e+00 - 1s/epoch - 12ms/step
+Epoch 7/16
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+104/104 - 1s - loss: 0.1587 - accuracy: 0.1188 - val_loss: 0.1813 - val_accuracy: 0.0000e+00 - 1s/epoch - 13ms/step

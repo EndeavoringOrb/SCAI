@@ -1,0 +1,43 @@
+Epoch 1/14
+14/25 [===============>..............] - ETA: 0s - loss: 2.7238 - accuracy: 0.1871
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+25/25 [==============================] - 2s 65ms/step - loss: 2.7100 - accuracy: 0.1841 - val_loss: 2.9167 - val_accuracy: 0.0000e+00
+Epoch 2/14
+15/25 [=================>............] - ETA: 0s - loss: 2.6336 - accuracy: 0.1862
+25/25 [==============================] - 1s 44ms/step - loss: 2.6057 - accuracy: 0.1946 - val_loss: 2.9242 - val_accuracy: 0.0000e+00
+Epoch 3/14
+15/25 [=================>............] - ETA: 0s - loss: 2.4443 - accuracy: 0.2000
+25/25 [==============================] - 2s 67ms/step - loss: 2.4655 - accuracy: 0.1953 - val_loss: 2.9307 - val_accuracy: 0.0000e+00
+Epoch 4/14
+25/25 [==============================] - 1s 52ms/step - loss: 2.3855 - accuracy: 0.2222 - val_loss: 2.9468 - val_accuracy: 0.0000e+00
+Epoch 5/14
+25/25 [==============================] - ETA: 0s - loss: 2.3197 - accuracy: 0.2209
+25/25 [==============================] - 1s 49ms/step - loss: 2.3197 - accuracy: 0.2209 - val_loss: 2.9702 - val_accuracy: 0.0000e+00
+Epoch 6/14
+15/25 [=================>............] - ETA: 0s - loss: 2.2786 - accuracy: 0.2381
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+25/25 [==============================] - 1s 42ms/step - loss: 2.2535 - accuracy: 0.2426 - val_loss: 2.9920 - val_accuracy: 0.0000e+00
+Epoch 7/14
+16/25 [==================>...........] - ETA: 0s - loss: 2.1834 - accuracy: 0.2579
+25/25 [==============================] - 1s 47ms/step - loss: 2.1697 - accuracy: 0.2492 - val_loss: 3.0192 - val_accuracy: 0.0000e+00
+Epoch 8/14
+16/25 [==================>...........] - ETA: 0s - loss: 2.1769 - accuracy: 0.2470
+25/25 [==============================] - 1s 43ms/step - loss: 2.1514 - accuracy: 0.2485 - val_loss: 3.0475 - val_accuracy: 0.0000e+00
+Epoch 9/14
+15/25 [=================>............] - ETA: 0s - loss: 2.0719 - accuracy: 0.2730
+25/25 [==============================] - 1s 51ms/step - loss: 2.0695 - accuracy: 0.2656 - val_loss: 3.0769 - val_accuracy: 0.0000e+00
+Epoch 10/14
+15/25 [=================>............] - ETA: 0s - loss: 2.0410 - accuracy: 0.2614
+25/25 [==============================] - 1s 43ms/step - loss: 2.0449 - accuracy: 0.2663 - val_loss: 3.1095 - val_accuracy: 0.0000e+00
+Epoch 11/14
+16/25 [==================>...........] - ETA: 0s - loss: 2.0019 - accuracy: 0.2768
+25/25 [==============================] - 1s 40ms/step - loss: 1.9889 - accuracy: 0.2814 - val_loss: 3.1476 - val_accuracy: 0.0000e+00
+Epoch 12/14
+15/25 [=================>............] - ETA: 0s - loss: 1.9658 - accuracy: 0.2783
+25/25 [==============================] - 1s 42ms/step - loss: 1.9543 - accuracy: 0.2827 - val_loss: 3.1833 - val_accuracy: 0.0000e+00
+Epoch 13/14
+16/25 [==================>...........] - ETA: 0s - loss: 1.9058 - accuracy: 0.3175
+25/25 [==============================] - 1s 41ms/step - loss: 1.9183 - accuracy: 0.3103 - val_loss: 3.2190 - val_accuracy: 0.0000e+00
+Epoch 14/14
+
+25/25 [==============================] - 1s 42ms/step - loss: 1.8919 - accuracy: 0.3176 - val_loss: 3.2543 - val_accuracy: 0.0000e+00

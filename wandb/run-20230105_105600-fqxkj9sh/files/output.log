@@ -1,0 +1,32 @@
+Epoch 1/10
+15/24 [=================>............] - ETA: 0s - loss: 2.5581 - accuracy: 0.0887
+24/24 [==============================] - 1s 47ms/step - loss: 2.5470 - accuracy: 0.0884 - val_loss: 2.2942 - val_accuracy: 0.1240
+Epoch 2/10
+ 1/24 [>.............................] - ETA: 0s - loss: 2.5436 - accuracy: 0.0550
+
+16/24 [===================>..........] - ETA: 0s - loss: 2.5174 - accuracy: 0.0860
+24/24 [==============================] - 1s 37ms/step - loss: 2.5092 - accuracy: 0.0919 - val_loss: 2.3238 - val_accuracy: 0.1240
+Epoch 3/10
+15/24 [=================>............] - ETA: 0s - loss: 2.5092 - accuracy: 0.0887
+24/24 [==============================] - 1s 45ms/step - loss: 2.4965 - accuracy: 0.0958 - val_loss: 2.3564 - val_accuracy: 0.1240
+Epoch 4/10
+15/24 [=================>............] - ETA: 0s - loss: 2.4633 - accuracy: 0.0917
+24/24 [==============================] - 1s 38ms/step - loss: 2.4608 - accuracy: 0.0903 - val_loss: 2.3966 - val_accuracy: 0.1240
+Epoch 5/10
+24/24 [==============================] - 1s 38ms/step - loss: 2.4429 - accuracy: 0.0997 - val_loss: 2.4332 - val_accuracy: 0.1240
+Epoch 6/10
+14/24 [================>.............] - ETA: 0s - loss: 2.4274 - accuracy: 0.1114
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+24/24 [==============================] - 1s 53ms/step - loss: 2.4235 - accuracy: 0.1099 - val_loss: 2.4562 - val_accuracy: 0.0997
+Epoch 7/10
+12/24 [==============>...............] - ETA: 0s - loss: 2.3979 - accuracy: 0.1147
+24/24 [==============================] - 1s 43ms/step - loss: 2.4054 - accuracy: 0.1087 - val_loss: 2.4759 - val_accuracy: 0.1024
+Epoch 8/10
+24/24 [==============================] - 1s 41ms/step - loss: 2.3944 - accuracy: 0.1087 - val_loss: 2.4954 - val_accuracy: 0.0768
+Epoch 9/10
+16/24 [===================>..........] - ETA: 0s - loss: 2.3901 - accuracy: 0.1049
+24/24 [==============================] - 1s 46ms/step - loss: 2.3864 - accuracy: 0.1044 - val_loss: 2.5189 - val_accuracy: 0.0377
+Epoch 10/10
+15/24 [=================>............] - ETA: 0s - loss: 2.3707 - accuracy: 0.1174
+
+24/24 [==============================] - 1s 38ms/step - loss: 2.3728 - accuracy: 0.1165 - val_loss: 2.5416 - val_accuracy: 0.0323

@@ -1,0 +1,60 @@
+wandb_version: 1
+
+activation_1:
+  value: relu
+activation_2:
+  value: relu
+activation_3:
+  value: relu
+architecture:
+  value: CNN
+batch_size:
+  value: 62
+conv1_filters:
+  value: 14
+conv1_kernelsize:
+  value: 5
+conv2_filters:
+  value: 22
+conv2_kernelsize:
+  value: 2
+decay_rate:
+  value: 0.507871358274717
+decay_steps:
+  value: 484
+dense1_size:
+  value: 119
+dropout:
+  value: 0.9367232817662696
+epoch:
+  value: 11
+epochs:
+  value: 5
+initial_learning_rate:
+  value: 1.8544732336102336e-06
+layer_1:
+  value: 677
+layer_2:
+  value: 10
+learning_rate:
+  value: 0.0013091207365591197
+log_freq:
+  value: 1
+loss:
+  value: mean_squared_error
+metric:
+  value: accuracy
+min_delta:
+  value: 0.0018975319081787456
+optimizer:
+  value: sgd
+patience:
+  value: 4
+random_seed:
+  value: 58
+staircase:
+  value: 'true'
+validation_split:
+  value: 0.2867017828149956
+verbose:
+  value: 1

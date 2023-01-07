@@ -1,0 +1,72 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2023-01-05T06:30:18.213484",
+    "startedAt": "2023-01-05T06:30:17.526313",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--activation_1=relu",
+        "--activation_2=relu",
+        "--activation_3=relu",
+        "--architecture=CNN",
+        "--batch_size=51",
+        "--conv1_filters=13",
+        "--conv1_kernelsize=4",
+        "--conv2_filters=29",
+        "--conv2_kernelsize=6",
+        "--decay_rate=0.2526977483101879",
+        "--decay_steps=187",
+        "--dense1_size=93",
+        "--dropout=0.3479733315763083",
+        "--epoch=7",
+        "--epochs=10",
+        "--initial_learning_rate=9.907912715744606e-07",
+        "--layer_1=335",
+        "--layer_2=18",
+        "--learning_rate=0.0006983322317157592",
+        "--log_freq=1",
+        "--loss=mean_squared_error",
+        "--metric=accuracy",
+        "--min_delta=0.0016958752165332747",
+        "--optimizer=sgd",
+        "--patience=6",
+        "--random_seed=23",
+        "--staircase=true",
+        "--validation_split=0.3599053677110483",
+        "--verbose=2"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\aaron\\CODING\\SCAI\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/EndeavoringOrb/SCAINEW",
+        "commit": "c93f71e0214866c892807f51c1408d9bcaf4613b"
+    },
+    "email": "aaronbelikoff@gmail.com",
+    "root": "C:/Users/aaron/CODING/SCAI",
+    "host": "LAPTOP-PPLOD2NI",
+    "username": "aaron",
+    "executable": "C:\\Users\\aaron\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2000.0
+        }
+    ],
+    "disk": {
+        "total": 475.82519149780273,
+        "used": 423.22729110717773
+    },
+    "memory": {
+        "total": 7.372367858886719
+    }
+}

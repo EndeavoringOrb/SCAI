@@ -1,0 +1,65 @@
+Epoch 1/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0853 - accuracy: 0.1129
+11/11 [==============================] - 3s 247ms/step - loss: 0.0853 - accuracy: 0.1129 - val_loss: 0.0915 - val_accuracy: 0.0000e+00
+Epoch 2/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0853 - accuracy: 0.1133
+11/11 [==============================] - 2s 191ms/step - loss: 0.0853 - accuracy: 0.1133 - val_loss: 0.0915 - val_accuracy: 0.0000e+00
+Epoch 3/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0853 - accuracy: 0.1133
+11/11 [==============================] - 2s 208ms/step - loss: 0.0853 - accuracy: 0.1133 - val_loss: 0.0915 - val_accuracy: 0.0000e+00
+Epoch 4/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0852 - accuracy: 0.1129
+11/11 [==============================] - 2s 191ms/step - loss: 0.0852 - accuracy: 0.1129 - val_loss: 0.0915 - val_accuracy: 0.0000e+00
+Epoch 5/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0852 - accuracy: 0.1129
+11/11 [==============================] - 2s 184ms/step - loss: 0.0852 - accuracy: 0.1129 - val_loss: 0.0914 - val_accuracy: 0.0000e+00
+Epoch 6/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0852 - accuracy: 0.1129
+11/11 [==============================] - 2s 192ms/step - loss: 0.0852 - accuracy: 0.1129 - val_loss: 0.0914 - val_accuracy: 0.0000e+00
+Epoch 7/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0852 - accuracy: 0.1129
+11/11 [==============================] - 2s 191ms/step - loss: 0.0852 - accuracy: 0.1129 - val_loss: 0.0914 - val_accuracy: 0.0000e+00
+Epoch 8/1000
+ 1/11 [=>............................] - ETA: 0s - loss: 0.0857 - accuracy: 0.0000e+00
+11/11 [==============================] - 2s 214ms/step - loss: 0.0852 - accuracy: 0.1129 - val_loss: 0.0914 - val_accuracy: 0.0000e+00
+Epoch 9/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 188ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0914 - val_accuracy: 0.0000e+00
+Epoch 10/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 193ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0913 - val_accuracy: 0.0000e+00
+Epoch 11/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 189ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0913 - val_accuracy: 0.0000e+00
+Epoch 12/1000
+ 1/11 [=>............................] - ETA: 0s - loss: 0.0855 - accuracy: 0.0000e+00
+wandb: Adding directory to artifact (.\models)... Done. 0.0s
+11/11 [==============================] - 2s 192ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0913 - val_accuracy: 0.0000e+00
+Epoch 13/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 212ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0913 - val_accuracy: 0.0000e+00
+Epoch 14/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 184ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0913 - val_accuracy: 0.0000e+00
+Epoch 15/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0851 - accuracy: 0.1129
+11/11 [==============================] - 2s 217ms/step - loss: 0.0851 - accuracy: 0.1129 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 16/1000
+10/11 [==========================>...] - ETA: 0s - loss: 0.0849 - accuracy: 0.1164
+11/11 [==============================] - 2s 225ms/step - loss: 0.0850 - accuracy: 0.1129 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 17/1000
+11/11 [==============================] - 2s 205ms/step - loss: 0.0850 - accuracy: 0.1129 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 18/1000
+10/11 [==========================>...] - ETA: 0s - loss: 0.0848 - accuracy: 0.1168
+11/11 [==============================] - 2s 220ms/step - loss: 0.0850 - accuracy: 0.1133 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 19/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0850 - accuracy: 0.1133
+11/11 [==============================] - 3s 265ms/step - loss: 0.0850 - accuracy: 0.1133 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 20/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0850 - accuracy: 0.1133
+11/11 [==============================] - 2s 201ms/step - loss: 0.0850 - accuracy: 0.1133 - val_loss: 0.0912 - val_accuracy: 0.0000e+00
+Epoch 21/1000
+11/11 [==============================] - ETA: 0s - loss: 0.0850 - accuracy: 0.1133
+wandb: Adding directory to artifact (.\models)... Done. 0.1s
+11/11 [==============================] - 2s 194ms/step - loss: 0.0850 - accuracy: 0.1133 - val_loss: 0.0911 - val_accuracy: 0.0000e+00
+Epoch 22/1000
