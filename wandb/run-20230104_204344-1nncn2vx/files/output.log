@@ -1,5 +1,0 @@
-
-12/13 [==========================>...] - ETA: 0s - loss: 0.4086 - accuracy: 0.1810
-WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
-
-13/13 [==============================] - 10s 609ms/step - loss: 0.4091 - accuracy: 0.1801 - val_loss: 0.3995 - val_accuracy: 0.2010
