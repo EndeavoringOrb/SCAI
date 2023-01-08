@@ -5,7 +5,6 @@ import keyboard
 from time import sleep
 import cv2
 import mouse
-import keyboard
 import winsound
 import os
 import threading
