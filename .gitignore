@@ -1,6 +1,7 @@
 # my stuff
 .vscode
 .idea
+.h5
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
