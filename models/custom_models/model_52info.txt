@@ -1,0 +1,5 @@
+Epochs Ran: 5
+Steps Ran: 2800
+Loss = 96964.6250
+Mean Absolute Error = 26.2185
+Accuracy = 0.3304
